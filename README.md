@@ -74,7 +74,7 @@ Siga estes passos para subir ou atulizar o projeto no GitHub:
 
 5. **Indicar o repositório:**
    ```bash
-   git remote add origin https://github.com/Linguini0802/"nome-do-repositório".git
+   git remote add origin https://github.com/"nome-do-usuario"/"nome-do-repositório".git
    ```
 
 6. **Push nas alterações (na branch main, pode alterar):**
