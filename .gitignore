@@ -1,0 +1,12 @@
+# Ocultar as planilhas com dados reais
+info_sti.xlsx
+relatorio_sti.xlsx
+
+# Ocultar a pasta do ambiente virtual
+venv/
+.venv/
+
+# Ocultar arquivos gerados pelo PyInstaller (Caso gere outras pastas do executável)
+dist/
+build/
+*.spec
