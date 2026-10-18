@@ -17,8 +17,6 @@ Com a implementação desta automação, foi possível:
 - **Selenium & WebDriver Manager** (Navegação web e extração automatizada)
 - **PyInstaller** (Compilação do projeto em um executável standalone para fácil uso no ambiente Windows)
 
----
-
 ## Sequência para Criar o Projeto
 
 Siga estes passos para configurar e inicializar o projeto do zero:
@@ -47,4 +45,39 @@ Siga estes passos para configurar e inicializar o projeto do zero:
 5. **Criar o arquivo executável:**
     ```bash
     python -m PyInstaller --onefile --hidden-import=selenium.webdriver.chrome.webdriver --hidden-import=selenium.webdriver.chrome.service --hidden-import=webdriver_manager.chrome --hidden-import=webdriver_manager.core.download_manager --hidden-import=webdriver_manager.core.driver_cache main.py; if ($?) { Move-Item -Path "dist\main.exe" -Destination ".\robô_sti.exe" -Force; Remove-Item -Path "build", "dist" -Recurse -Force; Remove-Item -Path "*.spec" -Force; Write-Host "Executável gerado e pastas limpas com sucesso!" -ForegroundColor Green }
+    ```
+
+## Atulizando o projeto no GitHub
+
+Siga estes passos para subir ou atulizar o projeto no GitHub:
+
+
+1. **Iniciar o Git:**
+   ```bash
+   git init
+   ```
+
+2. **Adicionar todos os aquivos(desconsiderando o .gitignore):**
+   ```bash
+   git add .
+   ```
+
+3. **Commit com descrição:**
+   ```bash
+   git commit -m "decrição do commit"
+   ```
+
+4. **Definir a branch main (Pode alterar a branch conforme desejar):**
+   ```bash
+   git branch -M main
+   ```
+
+5. **Indicar o repositório:**
+   ```bash
+   git remote add origin https://github.com/Linguini0802/"nome-do-repositório".git
+   ```
+
+6. **Push nas alterações (na branch main, pode alterar):**
+    ```bash
+    git push -u origin main
     ```
